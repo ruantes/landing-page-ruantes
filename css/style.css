@@ -25,3 +25,22 @@ body{
     align-items: center;
     min-height: 100vh;
 }
+
+/* 3. Estilo de Componente Principal */
+.card{
+    background-color: var(--cor-branco);
+    width: 320px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0, 0.1);
+    /* A mágica da animação começa aqui */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Esconder qualquer conteudo filho que possivelmente saia dos limites do card */
+    overflow: hidden;
+    text-align: center;
+}
+
+/* 4. Efeito hover no card */
+.card:hover{
+    transform: translateY(-10px); /*Mover o card em 10px para cima*/
+    box-shadow: 0 16px 32px rgba(0,0,0, 0.2);
+}
