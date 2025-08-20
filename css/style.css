@@ -44,3 +44,67 @@ body{
     transform: translateY(-10px); /*Mover o card em 10px para cima*/
     box-shadow: 0 16px 32px rgba(0,0,0, 0.2);
 }
+
+/* 5. Estilos de Imagem do Card */
+.card_image-container{
+    width: 100%;
+    height: 100%; /* Altura fixa para o container da imagem */
+}
+
+.card_image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem cubra todo o container */
+}
+
+/* 6. Estilo de Informação */
+
+.card_info{
+    padding: 24px;
+}
+
+.card_name{
+    font-size: 1.5rem;
+    color: var(--cor-texto-primario);
+    margin-bottom: 8px;
+}
+
+.card_title{
+    font-size: 1rem; /* 16px */
+    color: var(--cor-texto-secundario);
+    margin-bottom: 16px;
+}
+
+/* 7. Estilo dos Icones Sociais (Utilizando Flexbox) */
+
+.card_social{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.card_social a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    color: var(--cor-acento);
+    border: 2px solid var(--cor-acento);
+    border-radius: 50%; /* Deia o link redondo */
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card_social a:hover{
+    background-color: var(--cor-acento);
+    color: var(--cor-branco);
+    border-color: var(--cor-acento);
+}
+
+/* 8. Design Responsivo (Primeira Media Query!) */
+
+.card{
+    width: 90%; /* O card ocupará 90% da tela */
+}
